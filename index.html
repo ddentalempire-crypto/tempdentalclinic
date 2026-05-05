@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliage clinic | Premium Dental Care</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Cairo:wght@400;700&family=Tajawal:wght@400;500;700&family=Almarai:wght@300;400;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-contacts">
+                <a href="https://wa.me/1234567890" target="_blank"><i class="fa-brands fa-whatsapp"></i> +1 234 567 8900</a>
+                <span data-i18n="top-sat-thurs"><i class="fa-regular fa-clock"></i> Sat - Thu: 10:00 AM - 10:00 PM |
+                    Friday: Closed</span>
+            </div>
+            <div class="top-social">
+                <span data-i18n="top-follow">Follow Us</span>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                <i class="fa-solid fa-tooth" style="font-size: 2.2rem; color: #ffffff;"></i>
+                <span style="font-family: 'Playfair Display', serif; font-size: 2.2rem; font-style: italic; font-weight: 700; color: #ffffff;">Sliage</span>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active" data-i18n="nav-home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav-about">About</a></li>
+                    <li><a href="#services" data-i18n="nav-services">Service</a></li>
+                    <li><a href="#doctors" data-i18n="nav-doctors">Doctor</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#appointment" class="btn-header-book" data-i18n="btn-book">Book Appointment</a>
+                <button class="lang-switch-text" id="lang-btn">العربية</button>
+                <button class="mobile-nav-toggle" aria-label="Toggle Menu" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-slider-section">
+        <div class="hero-slider">
+            <div class="slide active"
+                style="background-image: url('1.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('2.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('3.jpg');">
+            </div>
+            <div class="slider-overlay"></div>
+        </div>
+        <div class="container hero-content-center">
+            <h2 class="hero-subtitle fade-up" data-i18n="hero-subtitle">Welcome To Sliage</h2>
+            <h1 class="hero-title fade-up delay-1" data-i18n="hero-title">Brighten your smile<br>with expert dental care</h1>
+            <p class="hero-description fade-up delay-2" data-i18n="hero-desc">We are committed to providing exceptional
+                dental care with a personal touch. Our dedicated team prioritizes your comfort and oral health above all
+                else</p>
+            <div class="hero-actions fade-up delay-3">
+                <a href="#contact" class="btn btn-hero btn-primary" data-i18n="btn-book">Book Appointment</a>
+                <a href="#services" class="btn btn-hero btn-secondary" data-i18n="btn-explore">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-title fade-up" data-i18n="services-subtitle">Dental Procedures</span>
+                <h2 class="fade-up" data-i18n="services-title">Explore Our Top Services</h2>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1: Hollywood Smile -->
+                <div class="service-card fade-up" data-service="Hollywood Smile">
+                    <div class="service-icon">
+                        <img src="service-icons/hollywood.png" alt="Hollywood Smile" class="service-img-icon">
+                    </div>
+                    <h3 data-i18n="service-1-title">Hollywood Smile</h3>
+                    <p data-i18n="service-1-desc">Transformative cosmetic makeovers for a radiant, perfect look.</p>
+                    <button class="service-btn" aria-label="Book Hollywood Smile"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Service 2: Dental Implants -->
+                <div class="service-card fade-up delay-1" data-service="Dental Implants">
+                    <div class="service-icon">
+                        <img src="service-icons/implants.png" alt="Dental Implants" class="service-img-icon">
+                    </div>
+                    <h3 data-i18n="service-2-title">Dental Implants</h3>
+                    <p data-i18n="service-2-desc">Advanced solutions for durable and natural-looking tooth replacement.
+                    </p>
+                    <button class="service-btn" aria-label="Book Dental Implants"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Service 3: Clear Aligner -->
+                <div class="service-card fade-up delay-2" data-service="Clear Aligner">
+                    <div class="service-icon">
+                        <img src="service-icons/aligner.png" alt="Clear Aligner" class="service-img-icon">
+                    </div>
+                    <h3 data-i18n="service-3-title">Clear Aligner</h3>
+                    <p data-i18n="service-3-desc">Modern orthodontic care for a perfectly aligned smile without braces.
+                    </p>
+                    <button class="service-btn" aria-label="Book Clear Aligner"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Service 4: Teeth Whitening -->
+                <div class="service-card fade-up delay-3" data-service="Teeth Whitening">
+                    <div class="service-icon">
+                        <img src="service-icons/whitening.png" alt="Teeth Whitening" class="service-img-icon">
+                    </div>
+                    <h3 data-i18n="service-4-title">Teeth Whitening</h3>
+                    <p data-i18n="service-4-desc">Professional whitening solutions to brighten your natural pearly
+                        whites.</p>
+                    <button class="service-btn" aria-label="Book Teeth Whitening"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Service 5: Root Canal -->
+                <div class="service-card fade-up" data-service="Root Canal">
+                    <div class="service-icon">
+                        <img src="service-icons/root.png" alt="Root Canal" class="service-img-icon">
+                    </div>
+                    <h3 data-i18n="service-5-title">Root Canal</h3>
+                    <p data-i18n="service-5-desc">Precision treatment to save and restore damaged or infected teeth.</p>
+                    <button class="service-btn" aria-label="Book Root Canal"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Service 6: Dental Fillings -->
+                <div class="service-card fade-up delay-1" data-service="Dental Fillings">
+                    <div class="service-icon">
+                        <img src="service-icons/fillings.png" alt="Dental Fillings" class="service-img-icon">
+                    </div>
+                    <h3 data-i18n="service-6-title">Dental Fillings</h3>
+                    <p data-i18n="service-6-desc">High-quality restorations for cavities, restoring strength and
+                        appearance.</p>
+                    <button class="service-btn" aria-label="Book Dental Fillings"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Service 7: Bridges & Crowns -->
+                <div class="service-card fade-up delay-2" data-service="Bridges & Crowns">
+                    <div class="service-icon">
+                        <img src="service-icons/crowns.png" alt="Bridges & Crowns" class="service-img-icon">
+                    </div>
+                    <h3 data-i18n="service-7-title">Bridges & Crowns</h3>
+                    <p data-i18n="service-7-desc">Durable and aesthetic restorations for stronger, healthier teeth.</p>
+                    <button class="service-btn" aria-label="Book Bridges & Crowns"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Service 8: Oral Surgery -->
+                <div class="service-card fade-up delay-3" data-service="Oral Surgery">
+                    <div class="service-icon">
+                        <img src="service-icons/surgery.png" alt="Oral Surgery" class="service-img-icon">
+                    </div>
+                    <h3 data-i18n="service-8-title">Oral Surgery</h3>
+                    <p data-i18n="service-8-desc">Specialized care for extractions and complex dental procedures.</p>
+                    <button class="service-btn" aria-label="Book Oral Surgery"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Doctors Section -->
+    <section id="doctors" class="doctors-section section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-title fade-up" data-i18n="doctors-subtitle">Expert Team</span>
+                <h2 class="fade-up" data-i18n="doctors-title">Top Doctors</h2>
+            </div>
+            <div class="doctors-grid">
+                <!-- Doctor 1 -->
+                <div class="doctor-card fade-up">
+                    <div class="doctor-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Dr. John Doe" style="object-fit: cover;">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-i18n="doc-1-name">Dr. John Doe</h3>
+                        <p data-i18n="doc-1-specialty">Consultant Orthodontist</p>
+                        <div class="doctor-actions">
+                            <a href="#" class="doc-action-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/1234567890" class="doc-action-btn whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <button class="doc-action-btn book-btn" aria-label="Book Appointment" type="button"><i class="fa-regular fa-calendar-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="doctor-card fade-up delay-1">
+                    <div class="doctor-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Dr. Jane Smith" style="object-fit: cover;">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-i18n="doc-2-name">Dr. Jane Smith</h3>
+                        <p data-i18n="doc-2-specialty">Advanced & Cosmetic Dentist</p>
+                        <div class="doctor-actions">
+                            <a href="#" class="doc-action-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/1234567890" class="doc-action-btn whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <button class="doc-action-btn book-btn" aria-label="Book Appointment" type="button"><i class="fa-regular fa-calendar-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="doctor-card fade-up delay-2">
+                    <div class="doctor-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Dr. Michael Brown" style="object-fit: cover;">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-i18n="doc-3-name">Dr. Michael Brown</h3>
+                        <p data-i18n="doc-3-specialty">Advanced & Cosmetic Dentist</p>
+                        <div class="doctor-actions">
+                            <a href="#" class="doc-action-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/1234567890" class="doc-action-btn whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <button class="doc-action-btn book-btn" aria-label="Book Appointment" type="button"><i class="fa-regular fa-calendar-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 4 -->
+                <div class="doctor-card fade-up">
+                    <div class="doctor-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Dr. Emily Davis" style="object-fit: cover;">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-i18n="doc-4-name">Dr. Emily Davis</h3>
+                        <p data-i18n="doc-4-specialty">Consultant Implantologist</p>
+                        <div class="doctor-actions">
+                            <a href="#" class="doc-action-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/1234567890" class="doc-action-btn whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <button class="doc-action-btn book-btn" aria-label="Book Appointment" type="button"><i class="fa-regular fa-calendar-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 5 -->
+                <div class="doctor-card fade-up delay-1">
+                    <div class="doctor-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Dr. David Wilson" style="object-fit: cover;">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-i18n="doc-5-name">Dr. David Wilson</h3>
+                        <p data-i18n="doc-5-specialty">Consultant Prosthodontist</p>
+                        <div class="doctor-actions">
+                            <a href="#" class="doc-action-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/1234567890" class="doc-action-btn whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <button class="doc-action-btn book-btn" aria-label="Book Appointment" type="button"><i class="fa-regular fa-calendar-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 6 -->
+                <div class="doctor-card fade-up delay-2">
+                    <div class="doctor-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Dr. Sarah Taylor" style="object-fit: cover;">
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-i18n="doc-6-name">Dr. Sarah Taylor</h3>
+                        <p data-i18n="doc-6-specialty">Endodontist Specialist</p>
+                        <div class="doctor-actions">
+                            <a href="#" class="doc-action-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/1234567890" class="doc-action-btn whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <button class="doc-action-btn book-btn" aria-label="Book Appointment" type="button"><i class="fa-regular fa-calendar-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Trust Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-inner">
+            <div class="about-image">
+                <div class="about-image-wrapper">
+                    <div class="ornament-shape"></div>
+                    <div class="main-image-shape">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2070"
+                            alt="Clinic Interior">
+                    </div>
+                    <div class="experience-badge">
+                        <h3 class="counter" data-target="9">0</h3>
+                        <p data-i18n="fact-years-badge">Years<br>Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="sub-title" data-i18n="about-subtitle">Get To Know About Us</span>
+                <h2 data-i18n="about-title">Welcome to Sliage</h2>
+
+                <div class="about-status">
+                    <div class="status-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span data-i18n="status-trust">Trust</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span data-i18n="status-comfort">Comfort</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span data-i18n="status-transparency">Transparency</span>
+                    </div>
+                </div>
+
+                <p class="about-p" data-i18n="about-p">"Founded in 2017 by five passionate dentists, Sliage clinic quickly became one of the leading dental centers. We offer personalized, high-quality care tailored to each patient's unique needs. Our services include Invisalign, cosmetic veneers, implants, water laser technology, and microscopic root canal treatment. With over 20 years of collective experience, we've proudly served more than 16,000 satisfied patients. Home to three Invisalign Diamond APEX providers, excellence is not a coincidence — it's our standard."</p>
+
+                <div class="about-actions">
+                    <div class="fun-facts luxury-facts">
+                        <div class="fact">
+                            <i class="fa-solid fa-star" style="color: #f59e0b;"></i>
+                            <h3 class="rating-val" style="color: #0077b6; font-size: 2.2rem; line-height: 1; margin-bottom: 8px; font-weight: bold;">4.7 <span style="font-size:0.5em;color:#888;">/ 5</span></h3>
+                            <p data-i18n="fact-rating">Clinic Rating</p>
+                        </div>
+                        <div class="fact">
+                            <i class="fa-solid fa-tooth"></i>
+                            <h3 class="counter" data-target="16000">0</h3>
+                            <p data-i18n="fact-cases">Cases Done</p>
+                        </div>
+                        <div class="fact">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <h3 class="counter" data-target="5">0</h3>
+                            <p data-i18n="fact-doctors">Expert Dentists</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn-discover"
+                        style="margin-top: 20px;">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (Swiper Slider) -->
+    <section id="reviews" class="reviews section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-title fade-up reviews-subtitle-text" data-i18n="reviews-subtitle">Customers Say</span>
+                <h2 class="fade-up reviews-title-text" data-i18n="reviews-title">REVIEWS</h2>
+            </div>
+
+            <div class="reviews-slider-wrapper swiper">
+                <div class="swiper-wrapper">
+                    <!-- Review 1 -->
+                    <div class="swiper-slide review-slide">
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p class="review-quote">"One of the most satisfying dental experiences I’ve ever had in Kuwait. Professional staff and state-of-the-art equipment. Much appreciated."</p>
+                            </div>
+                            <div class="review-author">
+                                <div class="review-avatar">
+                                    <img src="https://ui-avatars.com/api/?name=Musaed+Jassim&background=0077b6&color=fff&size=150" alt="Musaed Jassim">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Musaed Jassim</h4>
+                                    <span class="reviewer-role">Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="swiper-slide review-slide">
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p class="review-quote">"I had a great experience at this dental clinic. The staff were very respectful and kind. Highly recommended for any dental treatment."</p>
+                            </div>
+                            <div class="review-author">
+                                <div class="review-avatar">
+                                    <img src="https://ui-avatars.com/api/?name=Nada+AlNajjar&background=0077b6&color=fff&size=150" alt="Nada Al Najjar">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Nada Al Najjar</h4>
+                                    <span class="reviewer-role">Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="swiper-slide review-slide">
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p class="review-quote">"The dentists are amazing! Great results with my treatment. The clinic is very clean and professional. Thank you so much!"</p>
+                            </div>
+                            <div class="review-author">
+                                <div class="review-avatar">
+                                    <img src="https://ui-avatars.com/api/?name=Farah+Boodai&background=0077b6&color=fff&size=150" alt="Farah Boodai">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Farah Boodai</h4>
+                                    <span class="reviewer-role">Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 4 -->
+                    <div class="swiper-slide review-slide">
+                        <div class="review-card">
+                            <div class="review-stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="review-content">
+                                <p class="review-quote">"Simply in love with my experience at Sliage clinic. The atmosphere is very welcoming and the results are stunning."</p>
+                            </div>
+                            <div class="review-author">
+                                <div class="review-avatar">
+                                    <img src="https://ui-avatars.com/api/?name=Asmaa+Alawadhi&background=0077b6&color=fff&size=150" alt="Asmaa Alawadhi">
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4 class="reviewer-name">Asmaa Alawadhi</h4>
+                                    <span class="reviewer-role">Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Section -->
+    <section id="transformation" class="transformation section-padding dark-bg">
+        <div class="container">
+            <div class="transformation-wrapper align-items-center">
+                <div class="transformation-image-box fade-right">
+                    <video autoplay loop muted playsinline class="transformation-video">
+                        <source src="Transformations.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="transformation-badge">
+                        <span data-i18n="transform-badge">Real Results</span>
+                    </div>
+                </div>
+                <div class="transformation-content fade-left">
+                    <span class="sub-title" data-i18n="transform-subtitle">The Power of Smile</span>
+                    <h2 data-i18n="transform-title">Advanced Transformations</h2>
+                    <p data-i18n="transform-desc">Witness the incredible results of our Clear Aligner and specialized
+                        orthodontic treatments. We combine medical expertise with aesthetic precision.</p>
+                    <div class="transform-stats">
+                        <div class="stat-item">
+                            <span class="count">1000+</span>
+                            <p data-i18n="stat-1">Smiles Transformed</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="count">99%</span>
+                            <p data-i18n="stat-2">Patient Satisfaction</p>
+                        </div>
+                    </div>
+                    <div class="transform-actions">
+                        <a href="#appointment" class="btn btn-primary" data-i18n="btn-book">Book Your Consultation</a>
+                        <a href="#services" class="btn btn-secondary" data-i18n="btn-services">See Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-title fade-up" data-i18n="appointment-subtitle">Reservation</span>
+                <h2 class="fade-up" data-i18n="appointment-title">Book Appointment</h2>
+            </div>
+        </div>
+        <div class="appt-card">
+            <!-- Image background + Text overlay -->
+            <div class="appt-img-overlay"></div>
+            <div class="appt-img-text">
+                <span class="appt-badge-chip">Easy Access</span>
+                <h2 class="appt-img-heading">Book Your<br>Appointment<br><em>Quickly and Easily</em></h2>
+                <p class="appt-img-desc">Schedule your healthcare visit in just a few steps. Fill out the form below and
+                    our team will confirm your appointment immediately.</p>
+            </div>
+            <!-- Floating Form Card -->
+            <div class="appt-form-card fade-down">
+                <form id="main-booking-form">
+                    <div class="appt-row">
+                        <div class="appt-field">
+                            <label for="main-name" class="appt-label">Full Name</label>
+                            <input type="text" id="main-name" class="appt-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="appt-field">
+                            <label for="main-email" class="appt-label">Your Email</label>
+                            <input type="email" id="main-email" class="appt-input" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="appt-row">
+                        <div class="appt-field">
+                            <label for="main-phone" class="appt-label">Phone</label>
+                            <input type="tel" id="main-phone" class="appt-input" placeholder="e.g +1 234 567 8900"
+                                required>
+                        </div>
+                        <div class="appt-field">
+                            <label for="main-service" class="appt-label">Select</label>
+                            <select id="main-service" class="appt-input appt-select" required>
+                                <option value="" selected disabled>Select</option>
+                                <option value="Orthodontics">Orthodontics</option>
+                                <option value="Cosmetic">Cosmetic Dentistry</option>
+                                <option value="Implant">Dental Implants</option>
+                                <option value="Surgery">Oral Surgery</option>
+                                <option value="Pediatric">Pediatric Dentistry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="appt-row">
+                        <div class="appt-field">
+                            <label for="main-date" class="appt-label">Date</label>
+                            <input type="date" id="main-date" class="appt-input" required>
+                        </div>
+                        <div class="appt-field">
+                            <label for="main-time" class="appt-label">Time</label>
+                            <input type="time" id="main-time" class="appt-input">
+                        </div>
+                    </div>
+                    <div class="appt-field appt-field-full">
+                        <label for="main-message" class="appt-label">Message</label>
+                        <textarea id="main-message" rows="3" class="appt-input appt-textarea"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="appt-submit-btn">Book Appointment <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-inner">
+            <!-- Map Section -->
+            <div class="footer-map-col">
+                <iframe src="https://maps.google.com/maps?q=Dental%20Clinic&hl=en&z=14&output=embed"
+                    width="100%" height="250" style="border:0; border-radius:15px;" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact-col">
+                <h3 data-i18n="footer-contact">Contact Us</h3>
+                <ul class="footer-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Sliage, Kuwait</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+                    <li><i class="fa-regular fa-envelope"></i> info@sliageclinic.com</li>
+                </ul>
+            </div>
+
+            <!-- Hours & Socials -->
+            <div class="footer-hours-col">
+                <h3 data-i18n="footer-hours-title">Working Hours</h3>
+                <ul class="footer-list">
+                    <li><i class="fa-regular fa-clock"></i> Sat - Thurs: 10AM-4PM & 8PM-1AM</li>
+                    <li><i class="fa-solid fa-calendar-xmark"></i> Friday: Closed</li>
+                </ul>
+                <div class="footer-social-icons">
+                    <a href="https://wa.me/1234567890" class="social-icon whatsapp-icon" target="_blank"
+                        aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon facebook-icon" target="_blank" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon insta-icon" target="_blank" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year">2026</span> Sliage clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h2 data-i18n="modal-title">Book Your Appointment Now!</h2>
+                <p data-i18n="modal-desc">Book your appointment with Sliage clinic for expert care and personalized
+                    treatments. Let us help you achieve your brightest smile!</p>
+            </div>
+            <div class="modal-body">
+                <form id="appointment-form" class="appointment-form">
+                    <div class="form-group">
+                        <input type="text" id="full-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <select id="service-select" required>
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="Hollywood Smile">Hollywood Smile</option>
+                            <option value="Dental Implants">Dental Implants</option>
+                            <option value="Clear Aligner">Clear Aligner</option>
+                            <option value="Teeth Whitening">Teeth Whitening</option>
+                            <option value="Root Canal">Root Canal</option>
+                            <option value="Dental Fillings">Dental Fillings</option>
+                            <option value="Bridges & Crowns">Bridges & Crowns</option>
+                            <option value="Oral Surgery">Oral Surgery</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="appointment-date" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="appointment-time">
+                            <option value="" disabled selected>Preferred Time</option>
+                            <option value="morning">Morning (10AM - 1PM)</option>
+                            <option value="afternoon">Afternoon (1PM - 4PM)</option>
+                            <option value="evening">Evening (8PM - 1AM)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="message" rows="2" placeholder="Tell us about your dental needs..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" form="appointment-form" class="btn-submit" data-i18n="form-submit">Book
+                    Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-wa">
+        <a href="https://wa.me/1234567890" target="_blank" aria-label="Chat with us on WhatsApp">
+            <div class="wa-icon-wrapper">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div class="wa-pulse"></div>
+            </div>
+            <div class="wa-text-label">
+                <span data-i18n="wa-float-text">Chat with us</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- Discount Popup Modal -->
+    <div id="discount-modal" class="modal-overlay">
+        <div class="discount-modal-content">
+            <button class="discount-modal-close" aria-label="Close offer"><i class="fa-solid fa-xmark"></i></button>
+            <div class="discount-modal-body">
+                <div class="gift-icon-container">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                <h2 data-i18n="discount-title">20% OFF TODAY!</h2>
+                <p data-i18n="discount-desc">Enjoy our premium dental services with an exclusive discount for your first visit. Brighten your smile today!</p>
+                <div class="discount-cta">
+                    <a href="#appointment" class="btn btn-primary discount-claim-btn" data-i18n="discount-btn">Book Appointment Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
